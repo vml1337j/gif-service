@@ -1,0 +1,8 @@
+exchange-rate-api:
+  url: https://openexchangerates.org/api
+  api_key: ""
+  base_currency: USD
+
+giphy-api:
+  url: http://api.giphy.com/v1
+  api_key: ""

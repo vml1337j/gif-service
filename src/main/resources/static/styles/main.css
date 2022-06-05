@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    display: inline-block;
+    border: 1px solid;
+    padding: 20px;
+    background: rgba(213, 213, 213, 0.93);
+}
+
+.row {
+    display: inline-flex;
+    align-items: center;
+}
+
+.rate-text {
+    margin: 10px;
+    width: 180px;
+}
+
+p.desc {
+    font-size: 18px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+}

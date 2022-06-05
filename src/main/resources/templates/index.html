@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/styles/main.css}">
+    <title>Gif by Exchange Rate</title>
+</head>
+
+<div class="container">
+    <div class="row">
+        <div class="rate-text">
+            <p class="desc">Exchange rate yesterday:</p>
+            <h3 class="rate" th:text="${yesterdayRate}"></h3>
+        </div>
+
+        <div class="gif">
+            <img width="450px" height="300px" th:src="${gif.getGifUrl()}"/>
+        </div>
+
+        <div class="rate-text">
+            <p class="desc">Exchange rate today:</p>
+            <h3 class="rate" th:text="${todayRate}"></h3>
+        </div>
+    </div>
+
+    <div class="refresh">
+        <button onclick="window.location.reload()" >
+            Get another Gif
+        </button>
+    </div>
+</div>
